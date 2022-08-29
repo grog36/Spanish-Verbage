@@ -1,0 +1,15 @@
+{
+  "correr": {
+    "present": {
+      "first-person-singular": "corro",
+      "second-person-singular": "corres",
+      "third-person-singular": "corre",
+      "first-person-plural": "corremos",
+      "second-person-plural": "",
+      "third-person-plural": "corren"
+    },
+    "future": {
+      "first-person-singular": "comer"
+    }
+  }
+}
