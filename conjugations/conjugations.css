@@ -1,0 +1,82 @@
+/* Gregory Ecklund */
+/* November 2022 */
+
+/* Body */
+body {
+    background-color: blanchedalmond;
+    font-size: 20px;
+}
+
+/* All tables */
+.PRONOUN {
+    background-color: lightgray;
+    font-weight: bold;
+
+}
+.CONJUGATION {
+    background-color: lightcoral;
+    font-style: italic;
+}
+.TITLE {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 3px;
+    margin: 0px;
+    text-align: center;
+    background-color: azure;
+}
+table {
+    border-spacing: 0px;
+    width: 600px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+tbody > tr > td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 3px;
+    margin: 0px;
+    text-align: center;
+}
+
+/* Table layout */
+.conjugationTables {
+    display: flex;
+    justify-content: center;
+}
+.LEFTCOLUMN {
+    padding-right: 10px;
+}
+.RIGHTCOLUMN {
+    padding-left: 10px;
+}
+
+/* Search bar */
+#verbInput {
+    font-size: 20px;
+}
+#conjugateButton {
+    font-size: 20px;
+    background-color: lightgreen;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Verb Output Table (Bottom-Right) */
+#verbOutput {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 3px;
+    margin: 0px;
+    text-align: center;
+    background-color: lightblue;
+    font-weight: bold;
+}
+#definitionOutput {
+    background-color:lightyellow;
+    font-style: italic;
+}

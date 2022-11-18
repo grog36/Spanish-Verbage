@@ -1,3 +1,6 @@
+<!-- Gregory Ecklund -->
+<!-- November 2022 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +12,146 @@
     <link href = "./conjugations.css" rel = "stylesheet">
 </head>
 <body>
+    <div class = "INPUT">
+        <input list = "verbInputList" id = "verbInput" autofocus>
+
+
+        <datalist id = "verbInputList">
+            <!-- Options are added in "./conjugations.js" on startup -->
+        </datalist>
+        <button id = "conjugateButton" onclick = applyVerb()>Conjugate!</button>
+    </div>
+
+    <br>
+
+    <div class = "conjugationTables">
+
+        <div class = "LEFTCOLUMN">
+            <!-- Present Indicative Tense Table -->
+            <table class = "presentTense">
+                <caption class = "TITLE">Present Indicative Tense</caption>
+                <tr>
+                    <td class = "PRONOUN">yo</td>
+                    <td class = "CONJUGATION" id = "presentTense-firstPersonSingular"></td>
+                    <td class = "PRONOUN">nosotros(as)</td>
+                    <td class = "CONJUGATION" id = "presentTense-firstPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">tú</td>
+                    <td class = "CONJUGATION" id = "presentTense-secondPersonSingular"></td>
+                    <td class = "PRONOUN">vosotros(as)</td>
+                    <td class = "CONJUGATION" id = "presentTense-secondPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">él/ella/Ud.</td>
+                    <td class = "CONJUGATION" id = "presentTense-thirdPersonSingular"></td>
+                    <td class = "PRONOUN">ellos(as)/Uds.</td>
+                    <td class = "CONJUGATION" id = "presentTense-thirdPersonPlural"></td>
+                </tr>
+            </table>
     
+            <!-- Preterite Indicative Tense Table -->
+            <table class = "preteriteTense">
+                <caption class = "TITLE">Preterite Indicative Tense</caption>
+                <tr>
+                    <td class = "PRONOUN">yo</td>
+                    <td class = "CONJUGATION" id = "preteriteTense-firstPersonSingular"></td>
+                    <td class = "PRONOUN">nosotros(as)</td>
+                    <td class = "CONJUGATION" id = "preteriteTense-firstPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">tú</td>
+                    <td class = "CONJUGATION" id = "preteriteTense-secondPersonSingular"></td>
+                    <td class = "PRONOUN">vosotros(as)</td>
+                    <td class = "CONJUGATION" id = "preteriteTense-secondPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">él/ella/Ud.</td>
+                    <td class = "CONJUGATION" id = "preteriteTense-thirdPersonSingular"></td>
+                    <td class = "PRONOUN">ellos(as)/Uds.</td>
+                    <td class = "CONJUGATION" id = "preteriteTense-thirdPersonPlural"></td>
+                </tr>
+            </table>
+
+            <!-- Imperfect Indicative Tense Table -->
+            <table class = "imperfectTense">
+                <caption class = "TITLE">Imperfect Indicative Tense</caption>
+                <tr>
+                    <td class = "PRONOUN">yo</td>
+                    <td class = "CONJUGATION" id = "imperfectTense-firstPersonSingular"></td>
+                    <td class = "PRONOUN">nosotros(as)</td>
+                    <td class = "CONJUGATION" id = "imperfectTense-firstPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">tú</td>
+                    <td class = "CONJUGATION" id = "imperfectTense-secondPersonSingular"></td>
+                    <td class = "PRONOUN">vosotros(as)</td>
+                    <td class = "CONJUGATION" id = "imperfectTense-secondPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">él/ella/Ud.</td>
+                    <td class = "CONJUGATION" id = "imperfectTense-thirdPersonSingular"></td>
+                    <td class = "PRONOUN">ellos(as)/Uds.</td>
+                    <td class = "CONJUGATION" id = "imperfectTense-thirdPersonPlural"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class = "RIGHTCOLUMN">
+            <!-- Conditional Indicative Tense Table -->
+            <table class = "conditionalTense">
+                <caption class = "TITLE">Conditional Indicative Tense</caption>
+                <tr>
+                    <td class = "PRONOUN">yo</td>
+                    <td class = "CONJUGATION" id = "conditionalTense-firstPersonSingular"></td>
+                    <td class = "PRONOUN">nosotros(as)</td>
+                    <td class = "CONJUGATION" id = "conditionalTense-firstPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">tú</td>
+                    <td class = "CONJUGATION" id = "conditionalTense-secondPersonSingular"></td>
+                    <td class = "PRONOUN">vosotros(as)</td>
+                    <td class = "CONJUGATION" id = "conditionalTense-secondPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">él/ella/Ud.</td>
+                    <td class = "CONJUGATION" id = "conditionalTense-thirdPersonSingular"></td>
+                    <td class = "PRONOUN">ellos(as)/Uds.</td>
+                    <td class = "CONJUGATION" id = "conditionalTense-thirdPersonPlural"></td>
+                </tr>
+            </table>
+    
+            <!-- Future Indicative Tense Table -->
+            <table class = "futureTense">
+                <caption class = "TITLE">Future Indicative Tense</caption>
+                <tr>
+                    <td class = "PRONOUN">yo</td>
+                    <td class = "CONJUGATION" id = "futureTense-firstPersonSingular"></td>
+                    <td class = "PRONOUN">nosotros(as)</td>
+                    <td class = "CONJUGATION" id = "futureTense-firstPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">tú</td>
+                    <td class = "CONJUGATION" id = "futureTense-secondPersonSingular"></td>
+                    <td class = "PRONOUN">vosotros(as)</td>
+                    <td class = "CONJUGATION" id = "futureTense-secondPersonPlural"></td>
+                </tr>
+                <tr>
+                    <td class = "PRONOUN">él/ella/Ud.</td>
+                    <td class = "CONJUGATION" id = "futureTense-thirdPersonSingular"></td>
+                    <td class = "PRONOUN">ellos(as)/Uds.</td>
+                    <td class = "CONJUGATION" id = "futureTense-thirdPersonPlural"></td>
+                </tr>
+            </table>
+
+            <!-- Verb Output Table -->
+            <table>
+                <caption id = "verbOutput">No Verb Selected!</caption>
+                <td id = "definitionOutput">Definition will appear here when verb is selected.</td>
+            </table>
+
+        </div>
+
+    </div>
 </body>
 </html>
