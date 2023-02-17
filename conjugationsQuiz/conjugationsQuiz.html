@@ -12,28 +12,25 @@
     <link href = "./conjugationsQuiz.css" rel = "stylesheet">
 </head>
 <body>
-    <div id = "quiz">
-        <button id = "startButton" onclick = "start()">START!</button>
-        
-        <p id = "question"></p>
+    <button id = "startButton" onclick = "start()">START!</button>
     
-        <input type = "text" id = "answerInput" oninput = "checkAnswer()">
-    
-        <button id = "skipQuestionButton" onclick = "nextQuestion()">Skip Question</button>
-    
-        <div class = "scoreDisplay">
-            <label id = "scoreLabel">Score:</label>
-            <p id = "score"></p>
-        </div>
-        <div id = "specialCharactersDiv">
-            <button class = "specialCharactersButton" onclick = "addLetter('á')">á</button>
-            <button class = "specialCharactersButton" onclick = "addLetter('é')">é</button>
-            <button class = "specialCharactersButton" onclick = "addLetter('í')">í</button>
-            <button class = "specialCharactersButton" onclick = "addLetter('ñ')">ñ</button>
-            <button class = "specialCharactersButton" onclick = "addLetter('ó')">ó</button>
-            <button class = "specialCharactersButton" onclick = "addLetter('ú')">ú</button>
-        </div>
-    </div>
+    <p id = "question"></p>
 
+    <input type = "text" id = "answerInput" oninput = "checkAnswer()">
+
+    <button id = "skipQuestionButton" onclick = "nextQuestion()">Skip Question</button>
+
+    <div class = "scoreDisplay">
+        <label id = "scoreLabel">Score:</label>
+        <p id = "score"></p>
+    </div>
+    <div id = "specialCharactersDiv">
+        <button class = "specialCharactersButton" onclick = "addLetter('á')">á</button>
+        <button class = "specialCharactersButton" onclick = "addLetter('é')">é</button>
+        <button class = "specialCharactersButton" onclick = "addLetter('í')">í</button>
+        <button class = "specialCharactersButton" onclick = "addLetter('ñ')">ñ</button>
+        <button class = "specialCharactersButton" onclick = "addLetter('ó')">ó</button>
+        <button class = "specialCharactersButton" onclick = "addLetter('ú')">ú</button>
+    </div>
 </body>
 </html>
