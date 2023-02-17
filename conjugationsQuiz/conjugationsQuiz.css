@@ -1,0 +1,70 @@
+/* Gregory Ecklund */
+/* February 2023 */
+
+/* Background Color */
+body {
+    background-color: lightseagreen;
+}
+
+/* The Whole Quiz */
+#quiz {
+    text-align: center;
+}
+
+/* Start Button */
+#startButton {
+    padding: 4px 8px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: grey;
+    font-size: 40px;
+}
+
+/* Text Input */
+#answerInput {
+    visibility: hidden;
+}
+
+/* Question */
+#question {
+    font-size: 36;
+    font-weight: bold;
+    color: black;
+}
+
+/* Skip Question Button */
+#skipQuestionButton {
+    padding: 4px 8px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: grey;
+    font-size: 15px;
+    visibility: hidden;
+}
+
+/* Buttons - On Hover */
+#startButton:hover, #skipQuestionButton:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/* Score Display */
+.scoreDisplay {
+    color: lightyellow;
+    font-weight: bold;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+/* Special Characters */
+#specialCharactersDiv {
+    visibility: hidden;
+}
+.specialCharactersButton {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+}
